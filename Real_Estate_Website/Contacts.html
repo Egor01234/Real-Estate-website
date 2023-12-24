@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map and Credits</title>
+
+	<script type="text/javascript">
+		function myFunc()
+		{
+			var v1="Thank you! We pay attention to your request!";
+			window.alert(v1);
+
+		}
+	</script>
+	<map name="workmap" id="myMap">
+	<area shape="default" href="Home.html">
+	</map>
+	<nav>
+		<img src="img_main_project/img_banner.png" usemap="#myMap" class="banner">
+		<ul>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Listing_page.html">Sales</a></li>
+			<li><a href="Contacts.html">Contacts</a></li>
+			<li><a href="Map_and_Credits.html">Credits</a></li>
+		</ul>
+		
+		
+	</nav>
+	
+</head>
+<header></header>
+<body style="text-align: center;">
+
+<div class="div_form">
+<form>
+	<fieldset>
+		<legend><b>HOUSE PREFERENCES</b></legend>
+	<label for = "fname">First Name: </label>
+	<input type="text" name="fname" maxlength="15" pattern="[A-Z]{1}[a-z]{1,}" size = "40" id="fn" required><br><br>
+	<label for = "lname">Last Name: </label>
+	<input type="text" name="lname" id="ln" pattern="[A-Z]{1}[a-z]{1,}" size = "40" required><br><br>
+	<label for = "phone">Phone number: </label>
+	<input type="tel" name="phone" id="pn"  pattern="[0-9]{10}" minlength="10" maxlength="10" size="11" required><br><br>
+	<label for = "email">Email: </label>
+	<input name="email" type="email" required><br><br>
+	<label>Type of property: </label>
+	<input type="radio"  name = "type" checked>House
+	<input type="radio" name = "type">Condominium
+	<br><br>
+	<label for = "fbedrooms">Number of Bedrooms: </label><input type="number" name="fbedrooms" length="2" max="13" min="1" pattern="[0-9]{1,}" required size="1" value="2"><br><br>
+	<label for = "fbathrooms">Number of Bathrooms: </label><input type="number" name="fbathrooms" length="2" max="13" min="1" pattern="[0-9]{1,}" required size="1" value="1"><br><br>
+	<label for = "fprice">Price range: </label><input type="number" name="fprice" length="5" max="13000" min="1000" pattern="[0-9]{4,}" required size="1" value="1000" step="100">$ - <input type="number" name="fprice" length="5" max="13000" min="1000" pattern="[0-9]{4,}" required size="1" value="13000" step="100">$<br><br>
+	<label>Comments:</label><br><textarea  cols="50" rows="12"></textarea><br><br>
+	<button onclick="myFunc()"><a href="mailto:EstateAgent@gmail.com ">Submit</a></button>
+	</fieldset>
+</form>
+</div>
+
+
+</body>
+</html>
